@@ -23,16 +23,20 @@
             width: 100%;
             height: 300px;
 
-            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://cdn.topstarnews.net/news/photo/201807/456143_108614_510.jpg');
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hi.png');
             background-position: center 30%;
             background-size: cover;
 
-            color: white;
+            color: lightgreen;
 
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+        }
+
+        .temp {
+            color: orange;
         }
 
         .mypost {
@@ -106,18 +110,18 @@
 </head>
 <body>
     <div class="mypic">
-        <h1>십센치(10cm) 팬명록</h1>
-        <p>현재기온: <span id="temp">36</span>도</p>
+        <h1>나만의 인터넷편지</h1>
+        <p class="temp">현재기온: <span id="temp">36</span>도</p>
     </div>
     <div class="mypost">
         <div class="form-floating mb-3">
             <input type="text" class="form-control" id="name" placeholder="url">
-            <label for="floatingInput">닉네임</label>
+            <label for="floatingInput">성명</label>
         </div>
         <div class="form-floating">
             <textarea class="form-control" placeholder="Leave a comment here" id="comment"
                 style="height: 100px"></textarea>
-            <label for="floatingTextarea2">응원댓글</label>
+            <label for="floatingTextarea2">응원의 한 마디</label>
         </div>
         <button onclick="save_comment()" type="button" class="btn btn-dark">댓글 남기기</button>
     </div>

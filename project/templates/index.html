@@ -12,7 +12,7 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
-    <title>초미니홈피 - 팬명록</title>
+    <title>나만의 인터넷편지</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
     <style>
@@ -21,13 +21,13 @@
         }
         .mypic {
             width: 100%;
-            height: 300px;
+            height: 800px;
 
-            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hi.png');
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../static/images/jeju2.png');
             background-position: center 30%;
             background-size: cover;
 
-            color: lightgreen;
+            color: khaki;
 
             display: flex;
             flex-direction: column;
@@ -46,6 +46,7 @@
 
             box-shadow: 0px 0px 3px 0px black;
             padding: 20px;
+            color: black;
         }
 
         .mypost > button {
@@ -110,10 +111,8 @@
 </head>
 <body>
     <div class="mypic">
-        <h1>나만의 인터넷편지</h1>
-        <p class="temp">현재기온: <span id="temp">36</span>도</p>
-    </div>
-    <div class="mypost">
+        <h1>군대 응원편지</h1>
+        <div class="mypost">
         <div class="form-floating mb-3">
             <input type="text" class="form-control" id="name" placeholder="url">
             <label for="floatingInput">성명</label>
@@ -125,31 +124,9 @@
         </div>
         <button onclick="save_comment()" type="button" class="btn btn-dark">댓글 남기기</button>
     </div>
+    </div>
+
     <div class="mycards" id="comment-list">
-        <div class="card">
-            <div class="card-body">
-                <blockquote class="blockquote mb-0">
-                    <p>새로운 앨범 너무 멋져요!</p>
-                    <footer class="blockquote-footer">호빵맨</footer>
-                </blockquote>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-body">
-                <blockquote class="blockquote mb-0">
-                    <p>새로운 앨범 너무 멋져요!</p>
-                    <footer class="blockquote-footer">호빵맨</footer>
-                </blockquote>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-body">
-                <blockquote class="blockquote mb-0">
-                    <p>새로운 앨범 너무 멋져요!</p>
-                    <footer class="blockquote-footer">호빵맨</footer>
-                </blockquote>
-            </div>
-        </div>
     </div>
 </body>
 </html>
